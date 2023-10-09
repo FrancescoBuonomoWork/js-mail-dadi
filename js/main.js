@@ -1,10 +1,12 @@
 // console.log("funziona");
 // crea una lista(ARRAY) di email
+const appDOMElement = document.getElementById("app");
+// console.log("app", appDOMElement);
 const pDOMElement = document.createElement("p");
-console.log(pDOMElement);
+// console.log(pDOMElement);
 
 const arrayEmail = ["antonio@gmail.com", "maria@gmail.com","rosa@gmail.com", "luca@gmail.com"];
-console.log(arrayEmail);
+// console.log(arrayEmail);
 // chiedi all'utente la sua email (PROMPT)
 
 const userEmail = prompt("Inserisci la tua email");
@@ -23,16 +25,17 @@ for (let i = 0; i < arrayEmail.length; i++) {
 }
 if (emailFounded === true ) {
     let message = "l'email è valida";
-    console.log(message);
+    // console.log(message);
     pDOMElement.innerHTML = message;
-    console.log(pDOMElement.innerHTML)
-
+    // console.log(pDOMElement.innerHTML)
+    
 } else {
     message = "l'email non è valida";
-    console.log(message);
+    // console.log(message);
     pDOMElement.innerHTML = message;
-    console.log(pDOMElement.innerHTML)
+    // console.log(pDOMElement.innerHTML)
 }
+appDOMElement.append(pDOMElement);
 // verfica che l' email inserita dall'utente sia nella lista
 
 //     - stampa un messaggio appropriato per l'esito dell'operazione di verifica
