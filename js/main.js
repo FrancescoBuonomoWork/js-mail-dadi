@@ -5,16 +5,16 @@ const appDOMElement = document.getElementById("app");
 const pDOMElement = document.createElement("p");
 // console.log(pDOMElement);
 
-const arrayEmail = ["antonio@gmail.com", "maria@gmail.com","rosa@gmail.com", "luca@gmail.com"];
-// console.log(arrayEmail);
+const arrayEmails = ["antonio@gmail.com", "maria@gmail.com","rosa@gmail.com", "luca@gmail.com"];
+// console.log(arrayEmails);
 // chiedi all'utente la sua email (PROMPT)
 
 const userEmail = prompt("Inserisci la tua email");
 // seleziona in modo separato ogni elementro che fa parte della lista
 let emailFounded = false;
-for (let i = 0; i < arrayEmail.length; i++) {
+for (let i = 0; i < arrayEmails.length; i++) {
 
-    const currentEmail = arrayEmail[i];
+    const currentEmail = arrayEmails[i];
     // console.log(i,currentEmail);
     if (userEmail === currentEmail) {
         emailFounded = true;
