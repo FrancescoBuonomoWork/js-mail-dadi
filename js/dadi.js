@@ -11,7 +11,10 @@ let message;
 if (userNumber > computerNumber) {
     console.log("hai vinto");
     message = "Hai vinto";
-} else {
+} else if (userNumber === computerNumber) {
+    message = "Avete paregiato";
+}
+ else {
     console.log("hai perso");
     message = "Hai perso";
 }
